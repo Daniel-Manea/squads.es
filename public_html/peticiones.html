@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>SQUADS - Retos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <nav id="navigation-bar">
+        <script>
+            $.get("components/header.html", function (data) {
+                $("#navigation-bar").replaceWith(data);
+            });
+        </script>
+    </nav>
+    <div class="heading">
+        <h1 class="display-5 title">Únete al equipo de <a style="color: #00b3ed;">SQUADS</a>!</h1>
+        <p class="subtitle">En SQUADS sacamos un nuevo reto cada semana.<br />Para completar los retos solamente graba
+            un clip del momento exacto y envíalo al canal de #clips en nuestro Discord</p>
+        <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord Rainbow
+            Six</a>
+        <a class="btn btn-secondary btn-lg" href="https://tawk.to/chat/61eda8dab9e4e21181bb730d/1fq45n649"
+            target="_blank" role="button">Contáctanos</a>
+        <br /><br /><br /><br />
+        <div class="card statistic" style="width: 18rem; display: inline;">
+            <div class="cards">
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="total-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros totales</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="active-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros en linea</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="connected-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros en partida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+    </div>
+    <div class="features">
+        <div class="title">Envíanos tu petición</div>
+        <div class="subtitle">Si eres una persona apasionada y ordenada, ser personal es lo tuyo!</div>
+        <form id="petitionForm"
+            action="https://script.google.com/macros/s/AKfycbyPWPik1UfrXDEPyawm48D4bAgQebu0iMamCeO70iFzJfheKxo-hkOD3BE126UgpY7L/exec"
+            onsubmit="return false">
+            <div class="container center">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre</h5><br>
+                        <input class="center" name="Nombre" id="nombre" type="text" placeholder="Nombre*" maxlength="20"
+                            required />
+                        <input class="center" name="Apellidos" id="apellido" type="text" placeholder="Apellidos*"
+                            maxlength="20" required />
+                        <input class="center" name="Usuario R6" id="usuario" type="text"
+                            placeholder="Nombre de usuario R6*" maxlength="20" required />
+                        <p class="card-text">Querémos saber cómo llamarte en todo momento!</p>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Contácto</h5><br>
+                        <input class="center" name="E-Mail" id="email" type="email" placeholder="E-Mail*" maxlength="40"
+                            required />
+                        <input class="center" name="Teléfono" id="teléfono" type="text"
+                            placeholder="Número de teléfono*" maxlength="40" required />
+                        <input class="center" name="Discord ID" id="nombrediscord" type="text" placeholder="ID Discord*"
+                            maxlength="40" required />
+                        <p class="card-text">No vamos a enviarte spam, lo prometemos!</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Motivación</h5><br>
+                        <textarea class="center" name="Motivación" id="motivación" placeholder="Motivación*"
+                            data-autosize-input='{ "space": 20 }'></textarea>
+
+                        <p class="card-text">Queremos saber que es lo que te motiva a querer ser staff.</p>
+                    </div>
+                    <div class="vertical-center" style="display:inline-flex;">
+                        <button id="register" class="btn btn-r6 btn-lg" type="submit" method='post'>ENVIAR
+                            PETICIÓN</button>
+                    </div>
+
+                    </br>
+                    </br>
+                </div>
+
+        </form>
+
+    </div>
+    </div>
+    <div class="page_end">
+        <div class="start">
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Quieres formar parte de la comunidad?</div>
+                    <br />
+                    <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord
+                        Rainbow
+                        Six</a>
+                    <a class="btn btn-secondary btn-lg" href="https://tawk.to/chat/61eda8dab9e4e21181bb730d/1fq45n649"
+                        target="_blank" role="button">Contáctanos</a>
+                    <br /><br /><br /><br />
+                </div><br />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="assets/FOOTER LOGO.png" width="150"><br />
+                Copyright © SQUADS - 2022
+            </div><br />
+            <!-- <div class="nouridio">website designed by <a href="https://squads.es"> squads</a></div> -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/now-ui-kit.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/submitGoogleSheet.js"></script>
+</body>
+
+</html>
