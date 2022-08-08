@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>SQUADS - Retos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <nav id="navigation-bar">
+        <script>
+            $.get("components/header.html", function (data) {
+                $("#navigation-bar").replaceWith(data);
+            });
+        </script>
+    </nav>
+    <div class="heading">
+        <h1 class="display-5 title">Demuestra tus habilidades!</h1>
+        <p class="subtitle">En SQUADS sacamos un nuevo reto cada semana.<br />Para completar los retos solamente graba
+            un clip del momento exacto y envíalo al canal de #clips en nuestro Discord</p>
+        <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord Rainbow
+            Six</a>
+        <a class="btn btn-secondary btn-lg" href="https://tawk.to/chat/61eda8dab9e4e21181bb730d/1fq45n649"
+            target="_blank" role="button">Contáctanos</a>
+        <br /><br /><br /><br />
+        <div class="card statistic" style="width: 18rem; display: inline;">
+            <div class="cards">
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="total-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros totales</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="active-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros en linea</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="connected-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros en partida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+    </div>
+    <div class="features">
+        <div class="title">Retos semanales</div>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text" style="text-align: center;">Completa el reto, guarda el clip y envíalo al canal <a
+                        href="https://canary.discord.com/channels/758049294023524423/924743638758613012"
+                        target="_blank">#🎥丨clips-capturas</a> para ganar premios!</p>
+                <p class="card-text" style="text-align: center;">El reto queda anulado si el enemigo estaba herido
+                    previamente o si te encuentras en partida personalizada o PvE.</p>
+                <p class="card-text" style="text-align: center;">Los <a
+                        style="font-size: 15px; color: rgb(255, 0, 0);">RETOS CERRADOS</a> se pueden completar teniendo
+                    el rol de <a style="font-size: 15px; color: rgb(255, 125, 223);">NITRO BOOSTER</a></p>
+                <p class="card-text" style="text-align: center;">Todos los retos se deben completar en una sala de
+                    nuestro <a href="https://discord.gg/squads" target="_blank">Discord</a>.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(51, 255, 0);">RETO ACTIVO</p>
+                    <h5 class="card-title">Derrame 🧠</h5>
+                    <p class="card-text">Gana una partida en el evento <a
+                            href="https://www.ubisoft.com/es-es/game/rainbow-six/siege/events/mute-protocol">M.U.T.E
+                            protocol</a></p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Derrame en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Mamá 👩‍🦰</h5>
+                    <p class="card-text">Matar un enemigo mientras <a
+                            href="https://www.ubisoft.com/es-es/game/rainbow-six/siege/game-info/operators/dokkaebi">Dokka</a>
+                        le llama</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Mamá en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Telaraña 🕸️</h5>
+                    <p class="card-text">Capturar 2 drones con Mozzie en una ronda</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Telaraña en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Bear Hunter🐻</h5>
+                    <p class="card-text">Matar a un enemigo con el cepo de <a
+                            href="https://www.ubisoft.com/es-es/game/rainbow-six/siege/game-info/operators/frost">Frost</a>.
+                    </p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Bear Hunter en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Baiteo 🎣</h5>
+                    <p class="card-text">Matar a un enemigo con claymore.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Baiteador en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Ok. 👌</h5>
+                    <p class="card-text">Hacer tradeo de baja con un enemigo.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Ok. en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">MVP 🥇</h5>
+                    <p class="card-text">Quedar primero en 3 partidas.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol MVP en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Carpintero 🔨</h5>
+                    <p class="card-text">Matar a un enemigo con el martillo de <a
+                            href="https://www.ubisoft.com/es-es/game/rainbow-six/siege/game-info/operators/sledge#:~:text=Sledge%20is%20a%20soft%20breacher,tactical%20breaching%20hammer%3A%20The%20Caber."
+                            target="_blank">Sledge</a>.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Carpintero en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Cabezón 🤯</h5>
+                    <p class="card-text">Matar a un enemigo haciendo one tap.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Cabezón en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Tornado 🌪️</h5>
+                    <p class="card-text">Matar a 20 enemigos en modo partida a muerte.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Tornado en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Ojeador 👀</h5>
+                    <p class="card-text">Matar de spawn peek en menos de 20 segundos.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Ojeador en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Muralla 🛡️</h5>
+                    <p class="card-text">Matar a un enemigo jugando con escudo. </p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Muralla en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Pirómano 🔥</h5>
+                    <p class="card-text">Matar a un enemigo con fuego.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Pirómano en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Afilador 🔪</h5>
+                    <p class="card-text">Matar a un enemigo a cuchillo.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Afilador en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Obrero 🧱</h5>
+                    <p class="card-text">Matar a un enemigo a través de una pared.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Obrero en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Asesino ⚰️</h5>
+                    <p class="card-text">Matar a un enemigo con cualquier habilidad.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Asesino en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Destructor 💥</h5>
+                    <p class="card-text">Matar a un enemigo con explosivos.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Destructor en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Sicario 🩸</h5>
+                    <p class="card-text">Mata a 5 enemigos en la misma ronda.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Sicario en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Invisible 🔦</h5>
+                    <p class="card-text">Matar a un enemigo que está cegado.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Invisible en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">TEDAX 💣</h5>
+                    <p class="card-text">Haz la primera kill de la partida con explosivos.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol TEDAX en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="font-size: 15px; color: rgb(255, 0, 0);">RETO CERRADO</p>
+                    <h5 class="card-title">Carrileador 🛒</h5>
+                    <p class="card-text">Queda en primera posición con +10 kills.</p>
+                    <p class="card-text" style="font-size: 15px;"><strong
+                            style="font-size: 15px;"><u>Premios</u></strong></br><strong style="font-size: 12px;">- 1
+                            ticket sorteo 600 créditos R6</br>- Rol Carrileador en <a href="https://discord.gg/squads"
+                                target="_blank">Discord</a></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page_end">
+        <div class="start">
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Quieres formar parte de la comunidad?</div>
+                    <br />
+                    <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord
+                        Rainbow
+                        Six</a>
+                    <a class="btn btn-secondary btn-lg" href="https://tawk.to/chat/61eda8dab9e4e21181bb730d/1fq45n649"
+                        target="_blank" role="button">Contáctanos</a>
+                    <br /><br /><br /><br />
+                </div><br />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="assets/FOOTER LOGO.png" width="150"><br />
+                Copyright © SQUADS - 2022
+            </div><br />
+            <!-- <div class="nouridio">website designed by <a href="https://squads.es"> squads</a></div> -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/now-ui-kit.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>

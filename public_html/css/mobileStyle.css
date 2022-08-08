@@ -1,0 +1,179 @@
+@media (max-height:600px),
+(max-width:950px) {
+	@media (orientation: portrait) {
+
+		#background
+{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:-0%;
+	left:-0%;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover ;
+	filter:blur(0px);
+	animation-name: bg;
+	animation-duration: 4s;
+	animation-iteration-count:1;
+	display: none;
+}
+@keyframes bg
+{
+	0% { opacity: 0;}
+	25% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+
+		.navbar {
+			background-color: #1D1E28;
+			box-shadow: none !important;
+		}
+
+
+		#siegeTool {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			opacity: 1;
+			z-index: -1;
+		}
+
+		#operatorSelectBoard {
+			top: 10.8rem;
+			left: 0px;
+			height: 60%;
+			width: calc(100% - 0px);
+			overflow: scroll;
+		}
+
+		#operatorCountersBoard {
+			top: 46rem;
+			left: 0px;
+			height: 40%;
+			width: calc(100% - 0px);
+		}
+
+		#operatorsAttack,
+		#operatorsDefense {
+			top: 10%;
+			border: none;
+		}
+
+		.sideSelect,
+		#buttonRST {
+			position: fixed;
+			top: 6.6rem;
+			width: calc(100%/3);
+		}
+
+		.sideSelect.attack {
+			left: 0%;
+		}
+
+		.sideSelect.defense {
+			left: calc(100%/3);
+		}
+
+		#buttonRST {
+			right: 0%;
+			background-color: black;
+		}
+
+		.operator.list {
+			height: 25%;
+			/*width: 25%;*/
+			width: 25%;
+		}
+
+		.operator.countered {
+			height: 100%;
+			width: 100%;
+		}
+
+		.operator.hardCounter,
+		.operator.softCounter {
+			height: 50%;
+			width: 25%;
+		}
+
+
+	}
+
+	@media (orientation: landscape) {
+		#operatorSelectBoard {
+			overflow: scroll;
+			top: 0px;
+			left: 5%;
+			height: 100%;
+			width: calc(45% - 0px);
+			border-radius: 0px;
+			box-shadow: 6px 0px 20px 0px rgba(0, 0, 0, 0.5);
+		}
+
+		#operatorCountersBoard {
+			top: 0px;
+			right: 0%;
+			height: 100%;
+			width: calc(50% - 0px);
+			border-radius: 0px;
+		}
+
+		#operatorsAttack,
+		#operatorsDefense {
+			top: 0%;
+			height: auto;
+			border: none;
+		}
+
+		.sideSelect,
+		#buttonRST {
+			position: fixed;
+			left: 0%;
+			height: calc(100%/3);
+			width: 5%;
+		}
+
+		.sideSelect.attack {
+			top: 0%;
+		}
+
+		.sideSelect.defense {
+			top: calc(100%/3);
+		}
+
+		#buttonRST {
+			bottom: 0%;
+		}
+
+		.operator.list {
+			height: 30%;
+			width: 25%;
+			/*width: calc(100%/3);*/
+		}
+
+		.operator.countered {
+			height: 100%;
+			width: 100%;
+		}
+
+		.operator.hardCounter,
+		.operator.softCounter {
+			height: 50%;
+			width: 25%;
+		}
+	}
+}
+
+@media (max-height:300px),
+(max-width:300px) {
+	#aboutContainer {
+		top: 0px;
+		left: 0%;
+		height: 100%;
+		width: 100%;
+	}
+}

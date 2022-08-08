@@ -1,0 +1,230 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>SQUADS - Torneos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main-cgh.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+        </button>
+        <img class="gif" src="assets/squads_logo.svg" width="80px" height="80px" />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="torneos">Torneos</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" href="retos">Retos</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" href="normas">Normas</a>
+                </li>
+            </ul>
+            <li class="nav-item">
+                <a href="https://www.facebook.com/SQUADSR6" class="nav-link"><i class="fa fa-facebook"
+                        target="_blank"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="https://twitter.com/squads_r6" class="nav-link" target="_blank"><i
+                        class="fa fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="https://instagram.com/squads_r6" class="nav-link" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+            </li>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Guías Discord
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="verificación">Verificación</a>
+                    <a class="dropdown-item" href="crear-sala">Crear salas</a>
+                </div>
+            </div>
+            <a class="btn login-btn btn-outline-accent my-2 my-sm-0"
+                href="https://tawk.to/chat/61eda8dab9e4e21181bb730d/1fq45n649" target="_blank"
+                style="font-size: 10px !important;font-family: poppins !important;">ABRIR TICKET</a>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1 class="display-5 title"><a style="color: #c08d00;">CGHLeague</a> es una liga semiprofesional de Rainbow Six
+            Siege.</h1>
+        <p class="subtitle">CGH se esfuerza cada día para ofrecer a la comunidad hispanohablante una liga de calidad y a
+            la altura de las grandes ligas!</p>
+        <a class="btn btn-cgh btn-lg" href="https://twitter.com/cgh_league?lang=en" target="_blank"
+            role="button">Comunidad Gamer Hispana <img src="./assets/CGH.png" width="20" height="auto"></a>
+        <br /><br /><br /><br />
+        <div class="card statistic" style="width: 18rem; display: inline;">
+            <div class="cards">
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="total-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            </h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important; color: #c08d00;">
+                            participantes</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="active-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            44</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important; color: #c08d00;">equipos</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="connected-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important; color: #c08d00;">jornada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+    </div>
+
+    <div class="page_end">
+
+
+        <div class="features">
+            <img src="assets/CGH.png" width="100rem" height="auto">
+            <div class="title">Inscríbete a la mejor liga</div>
+            <div class="subtitle">CGH ha creado una competición única para todos sus participantes!</div>
+            <form id="userForm" action="https://script.google.com/macros/s/AKfycbyLPZ7GZPBvUsCsQnf9e9Zysvz7-HZj0X-yLFy4zeBJ6PS97NH9f8So-zskn_g_oD3x/exec"
+            target="_blank">
+                <div class="container center">
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Jugador</h5><br>
+                            <input class="center" name="Nombre" id="name" type="text" placeholder="Nombre*" maxlength="20" required />
+                            <input class="center" name="Apellidos" id="surname" type="text" placeholder="Apellidos*" maxlength="20"
+                                required />
+                            <input class="center" name="Usuario R6" id="username" type="text" placeholder="Nombre de usuario R6*"
+                                maxlength="20" required />
+                            <p class="card-text">Querémos saber cómo llamarte en todo momento!</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Contácto</h5><br>
+                            <input class="center" name="E-Mail" id="email" type="email" placeholder="E-Mail*" maxlength="40"
+                                required />
+                            <input class="center" name="Teléfono" id="tlf" type="text" placeholder="Número de teléfono*" maxlength="40"
+                                required />
+                            <input class="center" name="Discord ID" id="discordname" type="text" placeholder="ID Discord*" maxlength="40"
+                                required />
+                            <p class="card-text">No vamos a enviarte spam, lo prometemos!</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipo</h5><br>
+                            <input class="center" name="Nombre EQ" id="nameteam" type="text" placeholder="Nombre del equipo*"
+                                maxlength="20" required />
+                            <input class="center" name="Siglas EQ" id="nameteamshort" type="text"
+                                placeholder="Siglas del equipo*  Ej: FCB" maxlength="4" required />
+                            <input class="center" name="Capitán Discord" id="nameteamcapitan" type="text" placeholder="ID Discord Capitán*"
+                                maxlength="40" required />
+                            <p class="card-text">Elegir el nombre del equipo es tal vez una de las tareas más difíciles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Redes sociales</h5><br>
+                            <input class="center" name="Twitter" id="twitterteam" type="url" placeholder="Twitter equipo"
+                                maxlength="30" />
+                            <input class="center"  name="Instagram" id="instagramteam" type="url" placeholder="Instagram equipo"
+                                maxlength="30" />
+                            <input class="center" name="Facebook" id="facebookteam" type="url" placeholder="Facebook equipo"
+                                maxlength="30" />
+                            <p class="card-text">No tenemos pensado stalkearos... de momento!</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Método de pago</h5><br>
+                            <input class="center" name="Bizum" id="bizum" type="text" placeholder="Bizum" maxlength="20" />
+                            <input class="center" name="PayPal" id="paypal" type="text" placeholder="PayPal" maxlength="20">
+                            <p class="card-text">Tranquilo, no te vamos a cobrar nada o si?!</p>
+                        </div>
+
+                        <div class="vertical-center" style="display:inline-flex;">
+                            <button id="register" class="btn btn-cgh" type="submit"
+                                style="color: #000000; width: 15rem;">INSCRIBIRME</button>
+                        </div>
+                    </div>
+
+            </form>
+
+        </div>
+
+        <div class="start">
+
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Quieres formar parte de la comunidad?</div>
+                    <br />
+                    <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord
+                        Rainbow Six</a>
+                    <a class="btn btn-valorant btn-lg" href="https://discord.gg/kNVYb3ddC8" target="_blank"
+                        role="button">Discord Valorant</a>
+                </div><br />
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="assets/FOOTER LOGO.png" width="150"><br />
+                Copyright © SQUADS - 2022
+            </div><br />
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/now-ui-kit.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/submitGoogleSheet.js"></script>
+        <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "3292f93dc6a93e8886c3fff56cc25cdb" }) });</script>
+    </div>
+</body>
+
+</html> -->

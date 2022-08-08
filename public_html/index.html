@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>SQUADS - Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <nav id="navigation-bar">
+        <script>
+            $.get("components/header.html", function (data) {
+                $("#navigation-bar").replaceWith(data);
+            });
+        </script>
+    </nav>
+
+    <div class="heading">
+        <h1 class="display-5 title">Un lugar donde encontrar amigos a cualquier hora.</h1>
+        <p class="subtitle">SQUADS es una comunidad hispanohablante enfocada al Rainbow Six Siege<br />Una comunidad con
+            sorteos semanales, bots propios, miembros activos y mucho más!</p>
+        <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord Rainbow
+            Six</a>
+        <a class="btn btn-secondary btn-lg" href="javascript:void(Tawk_API.toggle())" role="button">Contáctanos</a>
+        <br /><br /><br /><br />
+        <div class="card statistic" style="width: 18rem; display: inline;">
+            <div class="cards">
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="total-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros totales</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="active-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros en linea</p>
+                    </div>
+                </div>
+                <div class="card statistic" style="width: 18rem;">
+                    <div class="card-body">
+                        <p id="connected-members" class="card-title"
+                            style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">
+                            -</h1>
+                        <p style="font-weight: bold !important;font-size: 20px !important;">miembros en partida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+    </div>
+    <div class="features">
+        <div class="title">Lo que encontrarás en nuestro Discord</div>
+        <div class="subtitle">Hemos creado una experiencia única para nuestros miembros!</div>
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sorteos semanales</h5>
+                    <p class="card-text">En SQUADS nos las ingeniamos para sacar un reto, quienes completen el reto
+                        entran automáticamente a un sorteo que se lleva a cabo al final de
+                        cada semana.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Miembros activos</h5>
+                    <p class="card-text">Contamos con medias de más de 40 miembros activos en salas de voz a cada hora.
+                        Según nuestras estadísticas tenemos un crecimiento de 25 miembros nuevos cada día.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bots interactivos</h5>
+                    <p class="card-text">Nuestros bots trackean
+                        y muestran información útil de cada miembro, por ejemplo el rango, puntos o KD. Esto permite una
+                        interacción mucho más rapida entre nuestros miembros!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page_end">
+        <div class="start">
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Quieres formar parte de la comunidad?</div>
+                    <br />
+                    <a class="btn btn-r6 btn-lg" href="https://discord.gg/squads" target="_blank" role="button">Discord
+                        Rainbow
+                        Six</a>
+                    <a class="btn btn-secondary btn-lg" href="javascript:void(Tawk_API.toggle())"
+                        role="button">Contáctanos</a>
+                    <br /><br /><br /><br />
+                </div><br />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="assets/FOOTER LOGO.png" width="150"><br />
+                Copyright © SQUADS - 2022
+            </div><br />
+            <!-- <div class="nouridio">website designed by <a href="https://squads.es"> squads</a></div> -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="js/now-ui-kit.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>function loadScript(a) { var b = document.getElementsByTagName("head")[0], c = document.createElement("script"); c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c) } loadScript(function () { beTracker.t({ hash: "3292f93dc6a93e8886c3fff56cc25cdb" }) });</script>
+
+
+</body>
+
+</html>
