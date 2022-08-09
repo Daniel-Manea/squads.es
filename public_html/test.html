@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>SQUADS - Peticiones</title>
+    <title>SQUADS - Retos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -66,11 +66,11 @@
     <div class="features">
         <div class="title">Envíanos tu petición</div>
         <div class="subtitle">Si eres una persona apasionada y ordenada, ser personal es lo tuyo!</div>
-        <form id="petitionForm"
-            action="https://script.google.com/macros/s/AKfycbyPWPik1UfrXDEPyawm48D4bAgQebu0iMamCeO70iFzJfheKxo-hkOD3BE126UgpY7L/exec"
-            onsubmit="return false">
+        <form id="userForm"
+            action="https://script.google.com/macros/s/AKfycbyLPZ7GZPBvUsCsQnf9e9Zysvz7-HZj0X-yLFy4zeBJ6PS97NH9f8So-zskn_g_oD3x/exec"
+            target="_blank">
             <div class="container center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 25rem;">
                     <div class="card-body">
                         <h5 class="card-title">Nombre</h5><br>
                         <input class="center" name="Nombre" id="nombre" type="text" placeholder="Nombre*" maxlength="20"
@@ -79,33 +79,40 @@
                             maxlength="20" required />
                         <input class="center" name="Usuario R6" id="usuario" type="text"
                             placeholder="Nombre de usuario R6*" maxlength="20" required />
-                        <p class="card-text">Cómo te llamas?</p>
+                        <p class="card-text">Querémos saber cómo llamarte en todo momento!</p>
                     </div>
                 </div>
 
 
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 25rem;">
                     <div class="card-body">
                         <h5 class="card-title">Contácto</h5><br>
                         <input class="center" name="E-Mail" id="email" type="email" placeholder="E-Mail*" maxlength="40"
                             required />
                         <input class="center" name="Teléfono" id="teléfono" type="text"
-                            placeholder="Teléfono (opcional)" maxlength="40" />
+                            placeholder="Número de teléfono*" maxlength="40" required />
                         <input class="center" name="Discord ID" id="nombrediscord" type="text" placeholder="ID Discord*"
                             maxlength="40" required />
-                        <p class="card-text">No enviamos spam!</p>
+                        <p class="card-text">No vamos a enviarte spam, lo prometemos!</p>
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;">
+
+
+                <div class="card" style="width: 25rem;">
                     <div class="card-body">
                         <h5 class="card-title">Motivación</h5><br>
                         <textarea class="center" name="Motivación" id="motivación" placeholder="Motivación*"
                             data-autosize-input='{ "space": 20 }'></textarea>
-                        <button id="register" class="btn btn-r6 btn-lg" type="submit" method='post'>ENVIAR
-                            PETICIÓN</button>
-                        <p class="card-text">Porqué quieres ser staff?</p>
+
+                        <p class="card-text">Queremos saber que es lo que te motiva a querer ser staff.</p>
                     </div>
+                    <div class="vertical-center" style="display:inline-flex;">
+                        <button id="register" class="btn btn-r6 btn-lg" type="submit">ENVIAR PETICIÓN</button>
+                    </div>
+
+                    </br>
+                    </br>
                 </div>
 
         </form>
@@ -143,7 +150,6 @@
         <script src="js/now-ui-kit.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/submitGoogleSheet.js"></script>
 </body>
 
 </html>

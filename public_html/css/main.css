@@ -269,404 +269,50 @@ color: rgba(255, 255, 255, 0.46) !important
     background: #ffffff; 
     border-radius: 4px;
   }
-  
-  /* Handle on hover
-  ::-webkit-scrollbar-thumb:hover {
-
-  } */
 
 
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea {
+      border-color: #000000;
+      border-radius: 10px !important;
+      background: #ffffff;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 15rem;
+  }
+
+  ::placeholder {
+      color: #0000007e
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+    textarea {
+    width: 100% !important;
+  }
+
+  input[type=text]:focus,
+  input[type=email],
+  input[type=url],
+  input[type=password]:focus {
+      color: #000000;
+      outline: none;
+      display: flex;
+  }
 
 
-  :root
-{
-    --colorBackgroundA:rgba(10,10,15,.2);
-    --color1:rgba(10,10,15,.2);
-    --color4:rgba(255,255,255,0.05);
-    --color5:rgba(255,255,255,0.03);
-    --color5hover:rgba(255,255,255,0.1);
-    --color5active:rgba(180,180,180,0.1);
-    --textShadowColor:rgba(0,0,0,.5);
-}
-#siegeTool
-{
-	position: fixed;
-	top:0px;
-	left:0px;
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-    z-index: -1;
-}
-#operatorSelectBoard,#operatorCountersBoard
-{
-  position:absolute;
-  z-index: 100;
-  top:calc(50% - 276px);
-  height: 32rem;
-  display: block;
-  background-color:var(--colorBackgroundA);
-  box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-  border-radius:3px;
-  transition:0.2s;
-}
-#operatorSelectBoard
-{
-	left:calc(40% - 450px - 15px);
-  	width:calc(450px + 2px);
-}
-#operatorCountersBoard
-{
-	right:calc(60% - 450px - 450px);
-	width:calc(450px + 450px);
-}
-.countersBoard
-{
-	position: absolute;
-	left:0%;
-	bottom:0%;
-	height: calc(100% - 64px);
-	width: 100%;
-	box-shadow: 0px 0px 0px 1px var(--color4) inset;
-	overflow: overlay;
-}
-.sideSelect
-{
-	z-index: 2;
-	position: relative;
-	float: left;
-	height: 64px;
-	width: 50%;
-	background:#202028;
-	color:white;
-	text-align: center;
-	cursor:pointer;
-	font-size:15px;
-}
-.sideSelect.attack
-{
-	background:#eb7116;
-}
-.sideSelect.defense
-{
-	background:#1489e0;
-}
-.sideSelect:hover
-{
-	box-shadow: 0px 0px 0px 99px var(--color5hover) inset;
-}
-.sideSelect:active
-{
-	box-shadow: 0px 0px 0px 99px var(--color5active) inset;
-}
-#buttonRST
-{
-	z-index: 3;
-	position: absolute;
-	bottom: -65px;
-	height: 4rem;
-	color:white;
-	text-align: center;
-	text-indent: 0px;
-	cursor:pointer;
-	font-size:15px;
-	transition:0.2s;
-	background:var(--color4);
-	box-shadow: 0px 0px 0px 1px var(--color4) inset;
-	/*border-radius:0px 0px 4px 4px;*/
-	width: 100%;
-}
-#buttonRST:hover
-{
-	background:var(--color5hover);
-}
-#buttonRST:active
-{
-	background:var(--color5active);
-}
-#operatorsAttack, #operatorsDefense{
+  hr {
+      border: none
+  }
 
-	position: relative;
-	width:auto;
-}
-
-#operatorsAttack
-{
-	border:1px solid #eb7116;
-	/*box-shadow: 0px 0px 0px 2px #eb7116 inset;*/
-}
-#operatorsDefense
-{
-	border:1px solid #1489e0;
-}
-#title1Counters
-{
-  z-index: 3;
-  position: relative;
-  float: top;
-  height: 4rem;
-  width: 100%;
-  background:var(--color4);
-  box-shadow: 0px 0px 0px 1px var(--color4) inset;
-  color:white;
-  text-align: center;
-  text-indent: 0px;
-  font-size:15px;
-}
-.title1
-{
-  position: relative;
-  float: left;
-  height: 100%;
-  text-align: center;
-}
-.title1.countered
-{
-  width:20%;
-}
-.title1.hardCounter,.title.softCounter
-{
-  width:40%;
-}
-.row
-{
-  box-shadow: 0px -1px 0px 0px var(--color4) inset;
-  position:relative;
-  float:top;
-  display:block;
-  width:calc(100%);
-  height: 5.6rem;
-}
-.row:last-child
-{
-	animation-name: rowA;
-	animation-duration: 0.15s;
-	animation-iteration-count: 1;
-}
-.row:nth-child(odd)
-{
-	background-color:rgba(0,0,0,0.1);
-}
-.row:nth-child(even)
-{
-	background-color:rgba(0,0,0,0.05);
-}
-
-.block
-{
-  float:left;
-  height:100%;
-  box-shadow: 1px 0px 0px 0px var(--color4) inset;
-}
-.block.countered
-{
-	width:20%;
-}
-.block.hardCounter, .block.softCounter
-{
-	width:40%;
-}
-.operator
-{
-  position: relative;
-  width:75px;
-  display:block;
-  float:left;
-}
-.operatorBadge
-{
-  position: relative;
-	height:100%;
-	width:100%;
-	display: block;
-	float: left;
-	margin: 0%;
-	transition:0.1s;
-  	background-color:transparent;
-}
-.operatorBadge:hover
-{
-	box-shadow: 0px 0px 0px 99px var(--color4) inset;
-}
-.operator.list
-{
-	cursor:pointer;
-}
-.operator.countered,.operator.hardCounter,.operator.softCounter
-{
-	cursor:default;
-}
-.operator.countered
-{
-	height: 100%;
-	width: 100%;
-}
-.operator.hardCounter,.operator.softCounter
-{
-	height: 45px;
-	width: 45px;
-}
-.operator .tooltiptext {
-  opacity: 0;
-  color:white;
-  visibility: hidden;
-  position: absolute;
-  width:120px;
-  background-color: black;
-  color:white;
-  text-align: center;
-  padding: 8px 0;
-  top:100%;
-  left:50%;
-  margin-top: -5px;
-  margin-left: -60px;
-  transition: opacity .2s, margin .2s;
-  z-index: 3;
-}
-.tooltiptext.list{
-  transition-delay: .5s;
-  width:75px;
-  margin-left: -37.5px;
-  text-transform: capitalize;
-}
-.operator .tooltiptext::after {
-  content:"";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left:-5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
-}
-.operator:hover .tooltiptext {
-  margin-top: 0px;
-  opacity: 1;
-  visibility: visible;
-}
-.operator:hover .tooltiptext:hover {
-  visibility: hidden;
-}
-#about
-{
-	z-index: 205;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-	height: 50px;
-	width: 50px;
-	border-radius:99px;
-	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-	border:1px solid rgba(255,255,255,0.1);
-	cursor:pointer;
-	color:white;
-	background-color:rgba(250,250,250,0.05);
-	background-image:url("../info.png");
-	background-size: 100% 100%;
-	transition: .3s;
-	animation-name: siegeT;
-	animation-duration: 3s;
-	animation-iteration-count:1;
-}
-#about:hover,#changeBg:hover,#githubLink:hover,#discordLink:hover
-{
-	background-color:rgba(250,250,250,0.1);
-}
-#about:active,#changeBg:active,#githubLink:active,#discordLink:active
-{
-	background-color:rgba(250,250,250,0.05);
-}
-#aboutFrame
-{
-	z-index: 110;
-	position: fixed;
-	top:0px;
-	left:0px;
-	height: 100%;
-	width: 100%;
-	background:rgba(0,0,250,0.05);
-	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-	border:1px solid rgba(255,255,255,0.1);
-}
-#aboutContainer
-{
-	position: absolute;
-	top:calc(50% - 180px);
-	left:calc(50% - 150px);
-	height: 395px;
-	width: 300px;
-	z-index: 201;
-	background-color:rgba(0,0,0,0.4);
-	box-shadow:0px 10px 20px 0px rgba(0, 0, 0, 0.2),
-		0px 0px 0px 1px rgba(0,0,0,0.1) inset;
-	transition:.5s;
-	border-radius:3px;
-	overflow: auto;
-  color:white;
-	text-align: center;
-}
-#aboutLogo
-{
-	float:left;
-	position: relative;
-	margin-top:20px;
-	height: 90px;
-	width: 40%;
-	background: url("../siegeToolLoading.png");
-	background-size: auto 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#aboutTextA,#aboutTextC,#aboutTextD
-{
-	position: relative;
-	height: auto;
-	left:5%;
-	width: 90%;
-}
-#aboutTextB
-{
-	float: left;
-	position: relative;
-	height: auto;
-	padding-top: 20px;
-	height:50px;
-	width: 60%;
-	text-align: left;
-	font-size: 25px;
-	z-index: 1;
-}
-.aboutIntro
-{
-	animation-name: abtIntro;
-	animation-duration: 0.55s;
-	animation-iteration-count: 1;
-}
-@keyframes abtIntro
-{
-	/* from{opacity: 0;transform:scale3d(.8,.8,1);}
-	to{opacity: 1;transform:scale3d(1,1,1);} */
-}
-
-#background
-{
-    z-index: -1;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top:-0%;
-	left:-0%;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover ;
-	filter:blur(0px);
-	animation-name: bg;
-	animation-duration: 4s;
-	animation-iteration-count:1;
-}
-@keyframes bg
-{
-	0% { opacity: 0;}
-	25% { opacity: 0;}
-	100% { opacity: 1;}
-}
+  .center {
+      margin: auto;
+      padding: 10px;
+  }
