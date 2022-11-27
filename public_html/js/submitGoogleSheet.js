@@ -9,12 +9,6 @@ window.addEventListener("load", () => {
       const lastname = document.getElementById('apellido');
       const r6username = document.getElementById('usuario');
       const email = document.getElementById('email');
-      let number;
-      try {
-        number = document.getElementById('teléfono');
-      } catch (error) {
-        number = "***"
-      }
       const motivation = document.getElementById('motivación');
 
       const webhookBody = {
@@ -25,7 +19,6 @@ window.addEventListener("load", () => {
             { name: 'Apellido', value: `${lastname.value}` },
             { name: 'Usuario R6', value: `${r6username.value}` },
             { name: 'Email', value: `${email.value}` },
-            { name: 'Teléfono', value: `${number.value}` },
             { name: 'Motivación', value: `${motivation.value}` }
           ]
         }],
